@@ -9,7 +9,7 @@ This basic infrastructure, also called **LAMP Stack**, consists in:
 
 ### 1. How does it work?
 
-When a client tries to connect to www.foobar.com, the browser will first check if the website has already been accessed before to get its IP address. If it hasn't, it will connect to a **DNS Resolver**, that will respond with the IP address of the **Web Server** (`8.8.8.8`). The browser will then establish a connexion with it and send it an HTTP request on the correct port (`80`). The **Web Server** will respond with static files (HTML/CSS) to be displayed in the browser, and if dynamic content is needed, it will ask the **Application Server**. This server will run the code base and interact with the database with CRUD operations to respond with the correct data.
+When a client tries to connect to `www.foobar.com`, the browser will first check if the website has already been accessed before to get its IP address. If it hasn't, it will connect to a **DNS Resolver**, that will respond with the IP address of the **Web Server** (`8.8.8.8`). The browser will then establish a connexion with it and send it an HTTP request on the correct port (`80`). The **Web Server** will respond with static files (HTML/CSS) to be displayed in the browser, and if dynamic content is needed, it will ask the **Application Server**. This server will run the code base and interact with the database with CRUD operations to respond with the correct data.
 
 <br>
 <p align=center>
@@ -25,7 +25,7 @@ A server is a physical or virtual computer running an operating system with dedi
 
 #### Role of the Domain Name:
 
-A domain name (in this case `foobar.com`) is a way to easily remember the address of a website, so we don't have to remember its IP address (in this case `8.8.8.8`). A **DNS Resolver** is mandatory to get the correct IP address when trying to access a website with its domain name.
+A domain name (`foobar.com`) is a way to easily remember the address of a website, so we don't have to remember its IP address (`8.8.8.8`). A **DNS Resolver** is mandatory to get the correct IP address when trying to access a website with its domain name.
 
 #### What type of DNS record `www` is in `www.foobar.com`?
 
@@ -55,7 +55,7 @@ A single point of failure (SPOF) is a part of a system that would stop the entir
 
 #### Downtime & Maintenance:
 
-Deploying new code on the server, uodating the system or fixing an issue could require restarting the server, which can be an issue in a LAMP Stack since it will result in a downtime, making the website inaccessible to users.
+Deploying new code on the server, uodating the system or fixing an issue could require restarting the server, which can be an issue in a LAMP Stack since it will result in a downtime, making the website completely inaccessible to all users for a period of time.
 
 #### Excess of Incoming Traffic:
 
