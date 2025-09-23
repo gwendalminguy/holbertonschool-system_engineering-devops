@@ -2,14 +2,14 @@
 
 This basic infrastructure, also called **LAMP Stack**, consists in:
 
-- A domain name (www.foobar.com resolving to 8.8.8.8)
-- A web server (Nginx) that can serve static files
-- An application server that can run application files
-- A database (MySQL)
+- A **Domain Name** (www.foobar.com resolving to 8.8.8.8)
+- A **Web Server** (Nginx) that can serve static files
+- An **Application Server** that can run application files
+- A **Database** (MySQL)
 
 ### 1. How does it work?
 
-When a client tries to connect to www.foobar.com, the browser will first check if the website has already been accessed before to get its IP address. If it hasn't, it will connect to a DNS Resolver, that will respond with the IP address of the web server (`8.8.8.8`). The browser will then establish a connexion with it and send it an HTTP request on the correct port (`80`). The web server will respond with static files (HTML/CSS) to be displayed in the browser, and if dynamic content is needed, it will ask the application server. This server will run the code base and interact with the database with CRUD operations to respond with the correct data.
+When a client tries to connect to www.foobar.com, the browser will first check if the website has already been accessed before to get its IP address. If it hasn't, it will connect to a **DNS Resolver**, that will respond with the IP address of the **Web Server** (`8.8.8.8`). The browser will then establish a connexion with it and send it an HTTP request on the correct port (`80`). The **Web Server** will respond with static files (HTML/CSS) to be displayed in the browser, and if dynamic content is needed, it will ask the **Application Server**. This server will run the code base and interact with the database with CRUD operations to respond with the correct data.
 
 <br>
 <p align=center>
@@ -41,11 +41,11 @@ The application server is responsible for running scripts from the code base, to
 
 #### Role of the Database:
 
-The database is responsible for the persistence of the website's data on the server. The application server will interact with the database through basic operations like creating, reading, updating and deleting data, according to the logic implemented in the application files.
+The database is responsible for the **persistence** of the website's data on the server. The application server will interact with the database through basic operations like **creating**, **reading**, **updating** and **deleting** data, according to the logic implemented in the application files.
 
 #### Communication between the Server and the Client:
 
-The server uses TCP/IP (Transmission Control Protocol/Internet Protocol) to communicate with the client, with HTTP(S) (Hypertext Transfer Protocol) formatted requests and responses.
+The server uses **TCP/IP** (Transmission Control Protocol/Internet Protocol) to communicate with the client, with **HTTP(S)** (Hypertext Transfer Protocol) formatted requests and responses.
 
 ### 3. Infrastructure Issues
 
