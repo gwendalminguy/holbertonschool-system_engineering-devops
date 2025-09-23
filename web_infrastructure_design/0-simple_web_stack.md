@@ -11,9 +11,11 @@ This basic infrastructure, also called **LAMP Stack**, consists in:
 
 When a client tries to connect to www.foobar.com, the browser will first check if the website has already been accessed before to get its IP address. If it hasn't, it will connect to a DNS Resolver, that will respond with the IP address of the web server (`8.8.8.8`). The browser will then establish a connexion with it and send it an HTTP request on the correct port (`80`). The web server will respond with static files (HTML/CSS) to be displayed in the browser, and if dynamic content is needed, it will ask the application server. This server will run the code base and interact with the database with CRUD operations to respond with the correct data.
 
+<br>
 <p align=center>
-    <img src="images/0-simple_web_stack.png" width="750">
+    <img src="images/0-simple_web_stack.png" width="500">
 </p>
+<br>
 
 ### 2. Infrastructure Specifics
 
