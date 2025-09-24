@@ -41,6 +41,16 @@ HTTPS is a secure transfer protocol that provides several key security improveme
 
 Server monitoring is the practice of continuously **tracking** the performance, availability, and security of servers. It helps **detect issues** such as downtime, unusual traffic, or resource exhaustion early, so they can be resolved before impacting users. Monitoring also provides valuable insights into system health and usage, allowing administrators to optimize performance and plan for future needs.
 
+#### Data Collection with a Monitoring Tool:
+
+There are several ways a monitoring tool can collect data:
+
+- **Agents**: Installation of a lightweight program, called an **agent**, directly on each server. It continuously collects system data such as CPU usage, memory, disk activity, and running processes, then forwards it to the monitoring platform. It can provide highly detailed and accurate metrics, though it does require deployment and maintenance on every machine to monitor.
+- **Protocols**:  Remote connexion to systems through **standard protocols** such as `SNMP` for network devices, `SSH` or `WinRM` for servers, or `WMI` for Windows environments. This makes setup simpler, but the monitoring system must actively query each device, which can increase overhead and often results in less granular data compared to agent-based methods.
+- **Log Forwarding**: Collection of logs produced by applications and operating systems by a **log forwarder** (such as *Fluentd* or *Filebeat*) and sent to a central location for analysis of errors, security incidents, or performance bottlenecks. This method provides rich insights into application behavior and can complement other monitoring strategies by showing detailed event histories.
+- **API Metrics**: Use of applications or services **metrics endpoints** to pull data. Monitoring tools like *Prometheus* can scrape `/metrics` endpoints at regular intervals, while cloud services like *AWS* or *Kubernetes* often provide APIs that monitoring systems can query. This method is efficient and widely used in modern cloud-native infrastructures.
+- **Synthetic Monitoring**: Simulation of user activity to measure the availability and performance of a system from the outside. For instance, it might periodically load a webpage, test a login form, or send API requests to verify that the service is responding correctly and within acceptable latency. This provides visibility into the actual user experience rather than just the internal server health.
+
 ### 3. Infrastructure Issues
 
 #### SSL Termination:
