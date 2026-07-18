@@ -1,3 +1,5 @@
 # System Engineering - DevOps
 
-This is the System Engineering - DevOps repository.
+This repository focuses on System Engineering and DevOps.
+
+* [Web Infrastructure Design](https://github.com/gwendalminguy/holbertonschool-system_engineering-devops/blob/main/web_infrastructure_design), a project to explore and understand the most common web infrastructure stacks.
